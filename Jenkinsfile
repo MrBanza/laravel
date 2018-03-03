@@ -17,7 +17,7 @@ node('php'){
     }
     
     stage('Docker Ship') {
-        sh 'docker push jeffersonsouza/laravel:$BUILD_NUMBER'
-        sh 'docker rmi -f jeffersonsouza/laravel:$BUILD_NUMBER'
+        sh 'docker push mrbanza/laravel:$BUILD_NUMBER'
+        sh 'docker rmi -f mrbanza/laravel:$BUILD_NUMBER'
     }
 }
